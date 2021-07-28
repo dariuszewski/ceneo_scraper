@@ -1,0 +1,43 @@
+body
+{
+  font-family: LiberationSansRegular;
+}
+.scraper-container
+{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 9%;
+    background:#282726;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1.5rem;
+}
+
+h3
+{
+    margin-bottom:12%;
+    color:#fff;
+}
+
+h5
+{
+    margin-bottom:6%;
+    color:#fff;
+}
+
+.form-group
+{
+  margin: 5%;
+}
+
+.btnSubmit
+{
+    font-weight: 600;
+    width: 50%;
+    color: #282726;
+    background-color: #fff;
+    border: none;
+    border-radius: 1.5rem;
+    padding:2%;
+}

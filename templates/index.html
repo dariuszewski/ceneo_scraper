@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<title>Ceneo Scraper</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+
+<body class="text-center">
+
+<div class="col-sm-6 scraper-container">
+<h3>Ceneo Scraper</h3>
+<form class="form-scraper" name = "form-scraper" action="/attach/" method="POST">
+<div class="form-group">
+
+<select class="form-control"  name="category" id="category" value="Wybierz kategorię produktu" required>
+    <option value="" disabled selected>Wybierz kategorię produktu</option>
+    <option value="Laptopy">Laptopy</option>
+    <option value="Tablety_PC">Tablety</option>
+    <option value="Smartfony">Smartfony</option>
+    <option value="Komputery">Komputery</option>
+    <option value="Monitory">Monitory</option>
+    <option value="Podzespoly_komputerowe">Podzespoły</option>
+    <option value="Akcesoria_komputerowe">Akcesoria</option>
+    <option value="Drukarki_i_skanery">Drukarki/Skanery</option>
+</select>
+
+<br>
+<input type="text" class="form-control" placeholder="Podaj parametry produktu" name="parameters" id="parameters"/>
+<br>
+
+<select class="form-control"  name="formatting" id="formatting" required>
+    <option value="" disabled selected>Wybierz format raportu</option>
+    <option value="Python dict">Python dict</option>
+    <option value="JSON">JSON</option>
+    <option value="CSV">CSV</option>
+    <option value="XML">XML</option>
+    <option value="Short text">Short text</option>
+</select>
+</div>
+<div class="form-group">
+<input type="submit" class="btnSubmit" value="Generuj" />
+</div>
+</form>
+
+</body>
+</html>

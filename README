@@ -1,0 +1,13 @@
+This will let you download reports based on given credentials from ceneo.pl .
+You can access this application on:
+http://flask-env.eba-vfvwde5p.eu-central-1.elasticbeanstalk.com/
+
+if you have any questions or suggestions about this application,
+feel free to contact me on:
+dariuszewski32@gmail.com
+
+files:
+app.py -> run application on your browser (flask & io)
+scraper.py -> function to scrap data from ceneo.pl (bs4 & requests)
+report_defs.py -> functions converting data to given formats
+
