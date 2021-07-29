@@ -15,10 +15,12 @@ def report_json(dataset):
 def report_csv(dataset):
     report = io.StringIO()
     writer = csv.writer(report, quoting=csv.QUOTE_NONNUMERIC)
-    writer.writerow(dataset[list(dataset.keys())[0]].keys())
+    headers = ['id'] + list(dataset[list(dataset.keys())[0]].keys())
+    writer.writerow(headers)
 
-    for value in range(len(dataset)):
-        writer.writerow(dataset[list(dataset.keys())[value]].values())
+    for item in dataset:
+        data = [item] + list(dataset[item].values())
+        writer.writerow(data)
 
     return report.getvalue()
 
