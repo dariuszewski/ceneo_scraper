@@ -12,3 +12,5 @@ scraper.py -> function to scrap data from ceneo.pl (bs4 & requests)
 report_defs.py -> functions converting data to given formats
 
 using this application require patience. it takes time to scrape 200 pages.
+
+This service is not available anymore. Feel free to reuse this code.
